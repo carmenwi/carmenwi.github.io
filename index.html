@@ -11,6 +11,10 @@
 <meta property="og:url" content="https://carmenwi.github.io/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_ES">
+<meta property="og:image" content="https://carmenwi.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://carmenwi.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f6bf5'/%3E%3Cstop offset='1' stop-color='%23f4507a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='system-ui' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3Ecw%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -140,7 +144,7 @@
   </div>
 
   <div class="stat hue-violet reveal d1">
-    <div class="stat-viz ringwrap">
+    <div class="stat-viz">
       <svg width="96" height="96" viewBox="0 0 96 96" aria-hidden="true">
         <defs>
           <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
@@ -156,9 +160,10 @@
           <line x1="18.9" y1="26.8" x2="12.4" y2="22.1"/><line x1="36.9" y1="13.8" x2="34.4" y2="6.2"/>
           <line x1="59.1" y1="13.8" x2="61.6" y2="6.2"/><line x1="77.1" y1="26.8" x2="83.6" y2="22.1"/>
         </g>
+        <text class="ring-lbl" x="48" y="53">GPA</text>
       </svg>
-      <strong><span class="count" data-to="9.7" data-dec="1">0</span><em>/10</em></strong>
     </div>
+    <strong><span class="count" data-to="9.7" data-dec="1">0</span><em>/10</em></strong>
     <span data-i18n="stats.gpa">GPA — 10× High Honors (≈ 4.0 US scale)</span>
   </div>
 
@@ -242,10 +247,10 @@
     </div>
 
     <div class="exp-metrics">
-      <div class="metric hue-blue reveal"><strong><span class="count" data-to="10">0</span>+</strong><span data-i18n="exp.m1">hours of manual reporting eliminated weekly</span></div>
-      <div class="metric hue-violet reveal d1"><strong><span class="count" data-to="1000">0</span>+</strong><span data-i18n="exp.m2">support queries a month handled by my RAG agent</span></div>
-      <div class="metric hue-rose reveal d2"><strong><span class="count" data-to="100">0</span>%</strong><span data-i18n="exp.m3">medically safe recommendations, guaranteed by design</span></div>
-      <div class="metric hue-teal reveal d3"><strong><span class="count" data-to="2000">0</span>+</strong><span data-i18n="exp.m4">pharmacy distribution points mapped for strategy</span></div>
+      <div class="metric hue-blue reveal"><strong><span class="count" data-to="10">0</span><em>+</em></strong><span data-i18n="exp.m1">hours of manual reporting eliminated weekly</span></div>
+      <div class="metric hue-violet reveal d1"><strong><span class="count" data-to="1000">0</span><em>+</em></strong><span data-i18n="exp.m2">support queries a month handled by my RAG agent</span></div>
+      <div class="metric hue-rose reveal d2"><strong><span class="count" data-to="100">0</span><em>%</em></strong><span data-i18n="exp.m3">medically safe recommendations, guaranteed by design</span></div>
+      <div class="metric hue-teal reveal d3"><strong><span class="count" data-to="2000">0</span><em>+</em></strong><span data-i18n="exp.m4">pharmacy distribution points mapped for strategy</span></div>
     </div>
 
     <div class="exp-pillars">
@@ -284,6 +289,8 @@
       <div class="card-links">
         <a href="https://github.com/carmenwi/MyLEA_Project_Hack4Edu" target="_blank" rel="noopener">GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <button class="cs-btn" data-cs="1"><span data-i18n="work.case">Case study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg></button>
       </div>
     </article>
 
@@ -299,10 +306,14 @@
       <p class="card-award" data-i18n="p2.award">NASA Space Apps Challenge 2025 — Spanish Space Agency</p>
       <h3 data-i18n="p2.title">Neoveo — asteroids, made legible</h3>
       <p data-i18n="p2.desc">48 hours to make planetary defense understandable: live NASA NeoWs telemetry, hazard classification, and an orbital dashboard any stakeholder can read.</p>
-      <ul class="tags"><li>Python</li><li>Pandas</li><li>NASA API</li><li>Streamlit</li></ul>
+      <ul class="tags"><li>Python</li><li>Pandas</li><li>NASA API</li><li>JavaScript</li></ul>
       <div class="card-links">
         <a href="https://github.com/alediabre/nasa-space-apps-challenge" target="_blank" rel="noopener">GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <a href="https://www.spaceappschallenge.org/2025/find-a-team/pleiades-protocol/?tab=project" target="_blank" rel="noopener">Space Apps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <button class="cs-btn" data-cs="2"><span data-i18n="work.case">Case study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg></button>
       </div>
     </article>
 
@@ -320,6 +331,8 @@
       <div class="card-links">
         <a href="https://github.com/carmenwi/Universidad" target="_blank" rel="noopener">GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <button class="cs-btn" data-cs="3"><span data-i18n="work.case">Case study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg></button>
       </div>
     </article>
 
@@ -336,6 +349,8 @@
       <div class="card-links">
         <a href="https://github.com/carmenwi/Universidad" target="_blank" rel="noopener">GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <button class="cs-btn" data-cs="4"><span data-i18n="work.case">Case study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg></button>
       </div>
     </article>
 
@@ -354,6 +369,8 @@
       <div class="card-links">
         <a href="https://github.com/carmenwi/devpost-gemini-hackathon" target="_blank" rel="noopener">GitHub
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+        <button class="cs-btn" data-cs="5"><span data-i18n="work.case">Case study</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg></button>
       </div>
     </article>
 
@@ -367,8 +384,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Python</span><span>SQL</span><span>BigQuery</span><span>Vertex AI</span><span>Gemini</span><span>Cloud Run</span><span>Pub/Sub</span><span>Looker Studio</span><span>R</span><span>Scikit-learn</span><span>Pandas</span><span>Power BI</span><span>Tableau</span><span>Git</span>
-    <span>Python</span><span>SQL</span><span>BigQuery</span><span>Vertex AI</span><span>Gemini</span><span>Cloud Run</span><span>Pub/Sub</span><span>Looker Studio</span><span>R</span><span>Scikit-learn</span><span>Pandas</span><span>Power BI</span><span>Tableau</span><span>Git</span>
+    <span><i class="mq-l" style="--logo:url('assets/logos/python.svg')"></i>Python</span><span><i class="mq-l" style="--logo:url('assets/logos/postgresql.svg')"></i>SQL</span><span><i class="mq-l" style="--logo:url('assets/logos/googlebigquery.svg')"></i>BigQuery</span><span><i class="mq-l" style="--logo:url('assets/logos/googlecloud.svg')"></i>Vertex AI</span><span><i class="mq-l" style="--logo:url('assets/logos/googlegemini.svg')"></i>Gemini</span><span>Cloud Run</span><span>Pub/Sub</span><span><i class="mq-l" style="--logo:url('assets/logos/looker.svg')"></i>Looker Studio</span><span><i class="mq-l" style="--logo:url('assets/logos/r.svg')"></i>R</span><span><i class="mq-l" style="--logo:url('assets/logos/scikitlearn.svg')"></i>Scikit-learn</span><span><i class="mq-l" style="--logo:url('assets/logos/pandas.svg')"></i>Pandas</span><span>Power BI</span><span>Tableau</span><span><i class="mq-l" style="--logo:url('assets/logos/git.svg')"></i>Git</span><span><i class="mq-l" style="--logo:url('assets/logos/streamlit.svg')"></i>Streamlit</span><span><i class="mq-l" style="--logo:url('assets/logos/numpy.svg')"></i>NumPy</span>
+    <span><i class="mq-l" style="--logo:url('assets/logos/python.svg')"></i>Python</span><span><i class="mq-l" style="--logo:url('assets/logos/postgresql.svg')"></i>SQL</span><span><i class="mq-l" style="--logo:url('assets/logos/googlebigquery.svg')"></i>BigQuery</span><span><i class="mq-l" style="--logo:url('assets/logos/googlecloud.svg')"></i>Vertex AI</span><span><i class="mq-l" style="--logo:url('assets/logos/googlegemini.svg')"></i>Gemini</span><span>Cloud Run</span><span>Pub/Sub</span><span><i class="mq-l" style="--logo:url('assets/logos/looker.svg')"></i>Looker Studio</span><span><i class="mq-l" style="--logo:url('assets/logos/r.svg')"></i>R</span><span><i class="mq-l" style="--logo:url('assets/logos/scikitlearn.svg')"></i>Scikit-learn</span><span><i class="mq-l" style="--logo:url('assets/logos/pandas.svg')"></i>Pandas</span><span>Power BI</span><span>Tableau</span><span><i class="mq-l" style="--logo:url('assets/logos/git.svg')"></i>Git</span><span><i class="mq-l" style="--logo:url('assets/logos/streamlit.svg')"></i>Streamlit</span><span><i class="mq-l" style="--logo:url('assets/logos/numpy.svg')"></i>NumPy</span>
   </div>
 </div>
 
@@ -476,7 +493,7 @@
 <section class="section about" id="about">
   <div class="about-grid">
     <figure class="about-photo reveal" data-tilt>
-      <img src="assets/profile.jpg" alt="Portrait of Carmen Witsman" onerror="this.parentElement.classList.add('no-img')">
+      <img src="assets/profile.jpg" alt="Portrait of Carmen Witsman" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/profile.jpeg'}else{this.parentElement.classList.add('no-img')}">
       <span class="monogram" aria-hidden="true">cw.</span>
     </figure>
     <div class="about-text">
@@ -522,6 +539,21 @@
   <span data-i18n="footer.built">Designed &amp; built by hand — no templates.</span>
   <a href="#top" data-i18n="footer.top">Back to top</a>
 </footer>
+
+<dialog class="cs" id="csDialog" aria-labelledby="csTitle">
+  <div class="cs-inner">
+    <button class="cs-close" id="csClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+    <p class="kicker" id="csKicker"></p>
+    <h3 id="csTitle"></h3>
+    <div class="cs-block"><h4 data-i18n="cs.problem">The problem</h4><p id="csP"></p></div>
+    <div class="cs-block"><h4 data-i18n="cs.approach">What I built</h4><p id="csA"></p></div>
+    <div class="cs-block"><h4 data-i18n="cs.impact">Impact</h4><p id="csI"></p></div>
+    <div id="csMedia"></div>
+    <div class="cs-links" id="csLinks"></div>
+  </div>
+</dialog>
 
 <script src="script.js"></script>
 </body>

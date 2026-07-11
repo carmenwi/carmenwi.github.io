@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OG card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    font-family:"Inter",sans-serif;color:#eceded;position:relative;
+    background:#0a0e1a;
+    display:flex;flex-direction:column;justify-content:center;padding:0 88px;
+  }
+  .blob{position:absolute;border-radius:50%;filter:blur(110px);opacity:.5}
+  .b1{width:560px;height:560px;background:#2e6bf0;top:-260px;right:-140px}
+  .b2{width:420px;height:420px;background:#0898c4;bottom:-240px;left:-120px;opacity:.4}
+  .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(236,237,237,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(236,237,237,.05) 1px,transparent 1px);background-size:60px 60px}
+  .role{font-size:24px;font-weight:600;letter-spacing:.24em;color:#7c9cff;text-transform:uppercase;margin-bottom:18px}
+  h1{font-family:"Space Grotesk";font-size:104px;font-weight:700;letter-spacing:-.04em;line-height:1.02;position:relative}
+  h1 .grad{background:linear-gradient(100deg,#7c9cff,#99a3ff 45%,#35c3e6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-size:27px;color:#9ba0ab;margin-top:26px;max-width:900px;line-height:1.45}
+  .row{display:flex;gap:14px;margin-top:44px}
+  .chip{font-size:21px;font-weight:600;padding:13px 26px;border-radius:999px;border:1.5px solid rgba(124,156,255,.4);background:rgba(46,107,240,.12)}
+  .chip b{color:#7c9cff;font-weight:600}
+  .url{position:absolute;bottom:44px;left:88px;font-size:22px;font-weight:600;color:#9ba0ab;letter-spacing:.02em}
+  .url b{color:#eceded}
+</style>
+</head>
+<body>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="grid"></div>
+  <p class="role">Data Science &amp; Engineering</p>
+  <h1>Carmen <span class="grad">Witsman</span></h1>
+  <p class="sub">Serverless pipelines on Google Cloud · RAG agents in production · 1st Place Hack4Edu 2025</p>
+  <div class="row">
+    <span class="chip"><b>6 mo</b> in production</span>
+    <span class="chip"><b>9.7/10</b> GPA</span>
+    <span class="chip"><b>1st</b> Innovation Award</span>
+    <span class="chip"><b>US / EU</b> work auth</span>
+  </div>
+  <p class="url"><b>carmenwi.github.io</b> — EN / ES</p>
+</body>
+</html>

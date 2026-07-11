@@ -69,6 +69,23 @@ const I18N = {
     "work.kicker": "Selected projects",
     "work.title": "Every project tells a story. Here are five.",
     "work.more": "Everything else lives on GitHub",
+    "work.case": "Case study",
+    "cs.problem": "The problem", "cs.approach": "What I built", "cs.impact": "Impact",
+    "cs1.p": "Students juggle scattered platforms, deadlines and materials — and disorganization quietly turns into dropout.",
+    "cs1.a": "MyLEA: a hub that connects to university virtual campuses and centralizes studying. AI-generated study paths and summaries via the OpenAI API, plus a virtual pet that gamifies staying on track. Python + Streamlit, leading a team of 4 with Git workflows, MVP deployed on Streamlit Cloud.",
+    "cs1.i": "1st Place Innovation Award at Hack4Edu 2025, Iberoamerica's largest edtech hackathon (ProFuturo — Telefónica & \"la Caixa\"), against global teams.",
+    "cs2.p": "NASA publishes near-Earth-object data only specialists can read — stakeholders can't act on raw telemetry.",
+    "cs2.a": "In 48 hours at the Spanish Space Agency, our team Pleiades Protocol built Neoveo: NeoWs API ingestion and hazard classification in Python (my part), wrapped in an interactive orbital web app anyone can navigate.",
+    "cs2.i": "A working app delivered under deadline — watch the demo below.",
+    "cs3.p": "In elderly-care data the patients most at risk are exactly the ones models miss: severe class imbalance hides them.",
+    "cs3.a": "A KNN risk classifier plus K-Means frailty segmentation, rebalanced with SMOTE and hardened with cross-validation to keep recall honest.",
+    "cs3.i": "95% sensitivity detecting mortality risk on test data — the metric that matters when a false negative is a person.",
+    "cs4.p": "Which variables actually drive loan default? Intuition disagrees; a lender needs evidence.",
+    "cs4.a": "Logistic regression in R (Tidyverse, Caret, Broom): isolating statistically significant risk drivers and explicitly validating against overfitting.",
+    "cs4.i": "82% precision and 95% sensitivity, consistent across validation — a model you can explain to a risk committee.",
+    "cs5.p": "New model family, new language, one weekend: could I ship something useful with Gemini outside my Python comfort zone?",
+    "cs5.a": "A TypeScript app on Google's Gemini API, built to the Devpost hackathon clock: prototype fast, cut scope, ship.",
+    "cs5.i": "Entry submitted and a new stack unlocked — proof the learning curve is the fun part.",
     "p1.award": "1st Place — Hack4Edu 2025, Iberoamerica's largest edtech hackathon",
     "p1.title": "MyLEA — AI study companion",
     "p1.desc": "A platform that plugs into university virtual campuses and turns scattered coursework into one organized study hub — with AI study paths, summaries and a virtual pet that keeps motivation alive. Judged 1st for Innovation among global teams (ProFuturo — Telefónica & \"la Caixa\").",
@@ -170,6 +187,23 @@ const I18N = {
     "work.kicker": "Proyectos destacados",
     "work.title": "Cada proyecto cuenta una historia. Aquí van cinco.",
     "work.more": "Todo lo demás está en GitHub",
+    "work.case": "Caso de estudio",
+    "cs.problem": "El problema", "cs.approach": "Qué construí", "cs.impact": "Impacto",
+    "cs1.p": "Los estudiantes hacen malabares con plataformas dispersas, fechas y materiales — y la desorganización se convierte silenciosamente en abandono.",
+    "cs1.a": "MyLEA: un hub que se conecta a los campus virtuales y centraliza el estudio. Rutas de estudio y resúmenes generados con IA (API de OpenAI), más una mascota virtual que gamifica la constancia. Python + Streamlit, liderando un equipo de 4 con flujos de Git, MVP desplegado en Streamlit Cloud.",
+    "cs1.i": "1er Premio a la Innovación en Hack4Edu 2025, el mayor hackathon edtech de Iberoamérica (ProFuturo — Telefónica y \"la Caixa\"), frente a equipos globales.",
+    "cs2.p": "La NASA publica datos de objetos cercanos a la Tierra que solo especialistas saben leer — los stakeholders no pueden actuar sobre telemetría bruta.",
+    "cs2.a": "En 48 horas en la Agencia Espacial Española, nuestro equipo Pleiades Protocol construyó Neoveo: ingesta de la API NeoWs y clasificación de peligrosidad en Python (mi parte), envueltas en una app web orbital interactiva que cualquiera puede navegar.",
+    "cs2.i": "Una app funcional entregada contra reloj — mira la demo abajo.",
+    "cs3.p": "En datos geriátricos, los pacientes de mayor riesgo son justo los que los modelos pasan por alto: el desbalanceo severo los esconde.",
+    "cs3.a": "Clasificador de riesgo KNN más segmentación de fragilidad con K-Means, rebalanceado con SMOTE y endurecido con validación cruzada para mantener el recall honesto.",
+    "cs3.i": "95% de sensibilidad detectando riesgo de mortalidad en test — la métrica que importa cuando un falso negativo es una persona.",
+    "cs4.p": "¿Qué variables determinan de verdad el impago? La intuición no se pone de acuerdo; un prestamista necesita evidencia.",
+    "cs4.a": "Regresión logística en R (Tidyverse, Caret, Broom): aislando las variables estadísticamente significativas y validando explícitamente contra el sobreajuste.",
+    "cs4.i": "82% de precisión y 95% de sensibilidad, consistentes en validación — un modelo que puedes explicar ante un comité de riesgo.",
+    "cs5.p": "Nueva familia de modelos, nuevo lenguaje, un fin de semana: ¿podía lanzar algo útil con Gemini fuera de mi zona de confort en Python?",
+    "cs5.a": "Una app TypeScript sobre la API de Gemini de Google, al ritmo del hackathon de Devpost: prototipar rápido, recortar alcance, lanzar.",
+    "cs5.i": "Entrada presentada y un stack nuevo desbloqueado — prueba de que la curva de aprendizaje es la parte divertida.",
     "p1.award": "1er Premio — Hack4Edu 2025, el mayor hackathon edtech de Iberoamérica",
     "p1.title": "MyLEA — compañero de estudio con IA",
     "p1.desc": "Una plataforma que se conecta a los campus virtuales y convierte el caos de asignaturas en un centro de estudio organizado — con rutas de estudio por IA, resúmenes y una mascota virtual que mantiene viva la motivación. 1er Premio a la Innovación entre equipos globales (ProFuturo — Telefónica y \"la Caixa\").",
@@ -235,6 +269,7 @@ function applyLang() {
   localStorage.setItem("lang", lang);
   $$(".count.done").forEach(el => el.textContent = fmtNum(+el.dataset.to, +(el.dataset.dec || 0)));
   const pt = $("#pipeTip"); if (pt) pt.classList.remove("show");
+  const dlg = $("#csDialog"); if (dlg && dlg.open) dlg.close();
   renderGH();
 }
 langSwitch.addEventListener("click", () => { lang = lang === "en" ? "es" : "en"; applyLang(); });
@@ -441,6 +476,37 @@ if (pipeTip && expCard) {
     node.addEventListener("focus", show);
     node.addEventListener("blur", hide);
   });
+}
+
+/* ————— Case studies ————— */
+const csDlg = $("#csDialog");
+if (csDlg) {
+  $$(".cs-btn").forEach(btn => btn.addEventListener("click", () => {
+    const n = btn.dataset.cs, card = btn.closest(".card");
+    const hue = [...card.classList].find(c => c.startsWith("hue-")) || "hue-blue";
+    csDlg.className = "cs " + hue;
+    $("#csKicker").textContent = I18N[lang][`p${n}.award`] || "";
+    $("#csTitle").textContent = I18N[lang][`p${n}.title`] || card.querySelector("h3").textContent;
+    $("#csP").textContent = I18N[lang][`cs${n}.p`];
+    $("#csA").textContent = I18N[lang][`cs${n}.a`];
+    $("#csI").textContent = I18N[lang][`cs${n}.i`];
+    const links = $("#csLinks"); links.innerHTML = "";
+    card.querySelectorAll(".card-links a").forEach(a => links.appendChild(a.cloneNode(true)));
+    const media = $("#csMedia"); media.innerHTML = "";
+    if (n === "2") {
+      media.innerHTML = `<div class="yt" role="button" tabindex="0" aria-label="Play Neoveo demo video">
+        <img src="https://i.ytimg.com/vi/vKlY5o2FtXI/hqdefault.jpg" alt="Neoveo demo video" loading="lazy">
+        <span class="yt-btn" aria-hidden="true"></span></div>`;
+      const y = media.firstElementChild;
+      const play = () => { y.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/vKlY5o2FtXI?autoplay=1" title="Neoveo demo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'; };
+      y.addEventListener("click", play, { once: true });
+      y.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); } }, { once: true });
+    }
+    csDlg.showModal();
+  }));
+  $("#csClose").addEventListener("click", () => csDlg.close());
+  csDlg.addEventListener("click", e => { if (e.target === csDlg) csDlg.close(); });
+  csDlg.addEventListener("close", () => { $("#csMedia").innerHTML = ""; });
 }
 
 /* ————— GitHub, live ————— */
