@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(try { $u = Invoke-RestMethod 'https://api.github.com/users/carmenwi' -ErrorAction Stop; $u | Select-Object login,name,bio,blog,location,public_repos | ConvertTo-Json } catch { \"user fetch failed: $_\" }; try { $r = Invoke-RestMethod 'https://api.github.com/users/carmenwi/repos?sort=pushed&per_page=50' -ErrorAction Stop; $r | Select-Object name,description,language,stargazers_count,fork,homepage,pushed_at | ConvertTo-Json -Depth 3 } catch { \"repos fetch failed: $_\" })"
-    ]
-  }
-}
