@@ -3,6 +3,15 @@ const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+/* Fallback for browsers without IntersectionObserver: fire immediately */
+if (!("IntersectionObserver" in window)) {
+  window.IntersectionObserver = class {
+    constructor(cb) { this.cb = cb; }
+    observe(el) { this.cb([{ isIntersecting: true, target: el }], this); }
+    unobserve() {} disconnect() {}
+  };
+}
+
 /* ————— i18n ————— */
 const I18N = {
   en: {
