@@ -23,11 +23,20 @@ const I18N = {
     "hero.cta1": "See what I've built", "hero.cta2": "Get in touch",
     "hero.loc": "Seville, Spain · Dual citizen US / ES",
     "stats.exp": "months shipping data & AI to production",
-    "stats.gpaval": "4.0<em>/4.0</em>",
-    "stats.gpa": "GPA, 3rd year — B.S. Data Science",
+    "stats.range": "DEC — MAY",
+    "stats.gpa": "GPA — 10× High Honors (≈ 4.0 US scale)",
     "stats.first": "1st",
     "stats.hack": "Innovation Award — Hack4Edu 2025",
     "stats.projects": "university & personal projects",
+    "prin.kicker": "How I work",
+    "pr1.t": "Ship beats perfect",
+    "pr1.d": "Prototype in days, iterate on feedback. Hackathons taught me speed; production taught me when to slow down.",
+    "pr2.t": "Users first",
+    "pr2.d": "A dashboard nobody reads doesn't count. I build for the person on the other side — stakeholder, student or patient.",
+    "pr3.t": "Data over opinions",
+    "pr3.d": "Every system I ship reports its own impact: hours saved, queries resolved, risks caught. If it can't be measured, it isn't done.",
+    "pr4.t": "Own it end to end",
+    "pr4.d": "Architecture to production, without waiting to be asked — the way I ran a 250-student community and a company's data pipeline at once.",
     "exp.kicker": "Industry experience",
     "exp.title": "Six months owning data & AI in production.",
     "exp.sub": "Data & AI Engineer at IVB Wellness Lab (health-tech, remote) — full ownership of the data lifecycle: architecture decisions, production code, real users.",
@@ -49,6 +58,14 @@ const I18N = {
     "exp.prev": "Before data: two summer seasons in hospitality and events in Washington State, and a summer at Jackson Hole Mountain Resort, Wyoming — pressure, English, and customers, first-hand.",
     "pipe.orders": "orders", "pipe.tickets": "tickets", "pipe.events": "events",
     "pipe.wh": "single source of truth", "pipe.dash": "dashboards", "pipe.rec": "Recommender", "pipe.clinical": "clinical scoring",
+    "exp.hint": "Hover each node to see what I built there.",
+    "tip.src": "Business sources: Shopify orders, Gorgias support tickets and web events — raw, messy, and arriving all day long.",
+    "tip.ingest": "Event-driven ingestion I built from scratch: Cloud Functions triggered via Pub/Sub and Cloud Tasks. Serverless — no machines to babysit.",
+    "tip.wh": "BigQuery as the single source of truth. Every team queries the same numbers, and every downstream product feeds from here.",
+    "tip.dash": "Looker Studio dashboards for marketing and e-commerce — they replaced 10+ hours of manual reporting every week.",
+    "tip.rag": "Support agent on Gemini 2.5 + Vertex AI: custom intent classifiers, latency-cutting caches and CI validators that block hallucinations. 1,000+ queries a month.",
+    "tip.rec": "Deterministic clinical scoring in Python: real medical conditions always outrank generic AI symptoms. Safety by design, on the whole store.",
+    "gh.repos": "public repos on GitHub", "gh.upd": "last push",
     "work.kicker": "Selected projects",
     "work.title": "Every project tells a story. Here are five.",
     "work.more": "Everything else lives on GitHub",
@@ -73,6 +90,7 @@ const I18N = {
     "skills.rag": "RAG systems", "skills.cls": "Classification", "skills.etl": "Serverless ETL",
     "journey.kicker": "Journey",
     "journey.title": "A short history of momentum.",
+    "tl.award": "Award", "tl.work": "Role", "tl.cert": "Certificate", "tl.edu": "Education", "tl.now": "In progress",
     "j7.t": "Santander Excelencia 360º Scholarship",
     "j7.d": "Selected for Santander's excellence program, recognizing academic record and project track. Also: a summer serving thousands of visitors at Jackson Hole Mountain Resort, Wyoming.",
     "j6.t": "Data & AI Engineer — IVB Wellness Lab",
@@ -82,12 +100,12 @@ const I18N = {
     "j4.t": "Google Data Analytics Professional Certificate",
     "j4.d": "Full analytics cycle — cleaning to dashboards — completed alongside my degree and a summer job abroad. Capstone on GitHub.",
     "j3.t": "B.S. in Data Science — UNIR",
-    "j3.d": "4.0/4.0 GPA this year (9.5/10 overall), six High Honors. Elected admin of the degree's official community — 250+ students, peer mentoring.",
+    "j3.d": "9.7/10 GPA with ten High Honors. Elected admin of the degree's official community — 250+ students, peer mentoring.",
     "j2.t": "Operations & Events — Columbia Hospitality, WA, USA",
     "j2.d": "Two Work & Travel seasons at a 4-star property: events, customer service, full-English environment.",
     "about.kicker": "About",
     "about.title": "Problem-solver first, technologist second.",
-    "about.p1": "I'm Carmen — I've shipped data systems a company runs on, won an international hackathon, and kept a 4.0 GPA while doing it. Dual US/Spanish citizen: I can work on either side of the Atlantic, no sponsorship needed.",
+    "about.p1": "I'm Carmen — I've shipped data systems a company runs on, won an international hackathon, and kept a 9.7/10 GPA while doing it. Dual US/Spanish citizen: I can work on either side of the Atlantic, no sponsorship needed.",
     "about.p2": "Off the keyboard I run a 250-student community, mentor peers, and collect hackathon weekends. Santander Excelencia 360º scholar. Spanish native, English C1, French B1.",
     "about.cven": "CV — English", "about.cves": "CV — Español",
     "contact.kicker": "Contact",
@@ -106,11 +124,20 @@ const I18N = {
     "hero.cta1": "Ver lo que he construido", "hero.cta2": "Hablemos",
     "hero.loc": "Sevilla, España · Doble nacionalidad EE. UU. / ES",
     "stats.exp": "meses llevando datos e IA a producción",
-    "stats.gpaval": "9,5<em>/10</em>",
-    "stats.gpa": "Nota media — Grado en Ciencia de Datos",
+    "stats.range": "DIC — MAY",
+    "stats.gpa": "Nota media — 10 Matrículas de Honor",
     "stats.first": "1er",
     "stats.hack": "Premio a la Innovación — Hack4Edu 2025",
     "stats.projects": "proyectos universitarios y personales",
+    "prin.kicker": "Cómo trabajo",
+    "pr1.t": "Lanzar gana a perfecto",
+    "pr1.d": "Prototipo en días, itero con feedback. Los hackathons me enseñaron velocidad; producción me enseñó cuándo frenar.",
+    "pr2.t": "Primero el usuario",
+    "pr2.d": "Un dashboard que nadie lee no cuenta. Construyo para la persona al otro lado — stakeholder, estudiante o paciente.",
+    "pr3.t": "Datos antes que opiniones",
+    "pr3.d": "Cada sistema que entrego reporta su propio impacto: horas ahorradas, consultas resueltas, riesgos detectados. Si no se puede medir, no está terminado.",
+    "pr4.t": "Propiedad de principio a fin",
+    "pr4.d": "De la arquitectura a producción, sin esperar a que me lo pidan — así llevé a la vez una comunidad de 250 estudiantes y el pipeline de datos de una empresa.",
     "exp.kicker": "Experiencia en industria",
     "exp.title": "Seis meses a cargo de datos e IA en producción.",
     "exp.sub": "Data & AI Engineer en IVB Wellness Lab (health-tech, remoto) — propiedad completa del ciclo de datos: decisiones de arquitectura, código en producción, usuarios reales.",
@@ -132,6 +159,14 @@ const I18N = {
     "exp.prev": "Antes de los datos: dos temporadas de hostelería y eventos en el estado de Washington, y un verano en Jackson Hole Mountain Resort, Wyoming — presión, inglés y clientes, en primera persona.",
     "pipe.orders": "pedidos", "pipe.tickets": "tickets", "pipe.events": "eventos",
     "pipe.wh": "fuente única de verdad", "pipe.dash": "dashboards", "pipe.rec": "Recomendador", "pipe.clinical": "scoring clínico",
+    "exp.hint": "Pasa el cursor por cada nodo para ver qué construí ahí.",
+    "tip.src": "Fuentes de negocio: pedidos de Shopify, tickets de soporte de Gorgias y eventos web — datos brutos llegando a todas horas.",
+    "tip.ingest": "Ingesta orientada a eventos construida desde cero: Cloud Functions disparadas vía Pub/Sub y Cloud Tasks. Serverless — sin máquinas que vigilar.",
+    "tip.wh": "BigQuery como fuente única de verdad. Todos los equipos consultan los mismos números, y cada producto posterior se alimenta de aquí.",
+    "tip.dash": "Dashboards en Looker Studio para marketing y e-commerce — sustituyeron 10+ horas de reporting manual cada semana.",
+    "tip.rag": "Agente de soporte sobre Gemini 2.5 + Vertex AI: clasificadores de intención propios, cachés de latencia y validadores CI que bloquean alucinaciones. +1.000 consultas al mes.",
+    "tip.rec": "Scoring clínico determinista en Python: las condiciones médicas reales siempre priman sobre síntomas genéricos de IA. Seguridad por diseño, en toda la tienda.",
+    "gh.repos": "repositorios públicos en GitHub", "gh.upd": "último push",
     "work.kicker": "Proyectos destacados",
     "work.title": "Cada proyecto cuenta una historia. Aquí van cinco.",
     "work.more": "Todo lo demás está en GitHub",
@@ -156,6 +191,7 @@ const I18N = {
     "skills.rag": "Sistemas RAG", "skills.cls": "Clasificación", "skills.etl": "ETL serverless",
     "journey.kicker": "Trayectoria",
     "journey.title": "Una breve historia de impulso.",
+    "tl.award": "Premio", "tl.work": "Puesto", "tl.cert": "Certificado", "tl.edu": "Formación", "tl.now": "En curso",
     "j7.t": "Beca Santander Excelencia 360º",
     "j7.d": "Seleccionada para el programa de excelencia de Santander por expediente y trayectoria de proyectos. Además: un verano atendiendo a miles de visitantes en Jackson Hole Mountain Resort, Wyoming.",
     "j6.t": "Data & AI Engineer — IVB Wellness Lab",
@@ -165,12 +201,12 @@ const I18N = {
     "j4.t": "Certificado Profesional de Análisis de Datos de Google",
     "j4.d": "Ciclo completo de analítica — de la limpieza a los dashboards — compaginado con el grado y un trabajo de verano en el extranjero. Capstone en GitHub.",
     "j3.t": "Grado en Ciencia de Datos — UNIR",
-    "j3.d": "Nota media 9,5/10 (4.0/4.0 este año), seis Matrículas de Honor. Administradora de la comunidad oficial del grado — 250+ estudiantes, mentoría entre pares.",
+    "j3.d": "Nota media 9,7/10 con diez Matrículas de Honor. Administradora de la comunidad oficial del grado — 250+ estudiantes, mentoría entre pares.",
     "j2.t": "Operaciones y eventos — Columbia Hospitality, WA, EE. UU.",
     "j2.d": "Dos temporadas Work & Travel en un hotel 4 estrellas: eventos, atención al cliente, entorno 100% en inglés.",
     "about.kicker": "Sobre mí",
     "about.title": "Primero resolver problemas, después la tecnología.",
-    "about.p1": "Soy Carmen — he construido sistemas de datos de los que depende una empresa, he ganado un hackathon internacional y he mantenido una media de sobresaliente mientras tanto. Doble nacionalidad EE. UU./España: puedo trabajar a ambos lados del Atlántico sin patrocinio de visado.",
+    "about.p1": "Soy Carmen — he construido sistemas de datos de los que depende una empresa, he ganado un hackathon internacional y he mantenido un 9,7/10 de media mientras tanto. Doble nacionalidad EE. UU./España: puedo trabajar a ambos lados del Atlántico sin patrocinio de visado.",
     "about.p2": "Fuera del teclado gestiono una comunidad de 250 estudiantes, hago mentoría y colecciono fines de semana de hackathon. Becaria Santander Excelencia 360º. Español nativo, inglés C1, francés B1.",
     "about.cven": "CV — English", "about.cves": "CV — Español",
     "contact.kicker": "Contacto",
@@ -183,8 +219,9 @@ const I18N = {
 };
 
 let lang = localStorage.getItem("lang") || (navigator.language.startsWith("es") ? "es" : "en");
+let ghData = null;
 const langSwitch = $("#langSwitch");
-const fmtNum = n => n >= 1000 ? n.toLocaleString(lang === "es" ? "es-ES" : "en-US") : String(n);
+const fmtNum = (n, dec = 0) => n.toLocaleString(lang === "es" ? "es-ES" : "en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec });
 function applyLang() {
   const dict = I18N[lang];
   $$("[data-i18n]").forEach(el => {
@@ -196,7 +233,9 @@ function applyLang() {
   document.documentElement.lang = lang;
   langSwitch.setAttribute("aria-checked", lang === "es" ? "true" : "false");
   localStorage.setItem("lang", lang);
-  $$(".count.done").forEach(el => el.textContent = fmtNum(+el.dataset.to));
+  $$(".count.done").forEach(el => el.textContent = fmtNum(+el.dataset.to, +(el.dataset.dec || 0)));
+  const pt = $("#pipeTip"); if (pt) pt.classList.remove("show");
+  renderGH();
 }
 langSwitch.addEventListener("click", () => { lang = lang === "en" ? "es" : "en"; applyLang(); });
 applyLang();
@@ -300,6 +339,18 @@ if (!reduceMotion && matchMedia("(pointer:fine)").matches) {
   }, { passive: true });
 }
 
+/* ————— Project dot grid (60 dots, staggered) ————— */
+const dg = document.getElementById("dotGrid");
+if (dg) {
+  let i = 0;
+  for (let r = 0; r < 6; r++) for (let c = 0; c < 10; c++) {
+    const d = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    d.setAttribute("cx", 7 + c * 14); d.setAttribute("cy", 8 + r * 13.6); d.setAttribute("r", 3.2);
+    d.style.transitionDelay = (i++ * 14) + "ms";
+    dg.appendChild(d);
+  }
+}
+
 /* ————— SMIL pause under reduced motion ————— */
 if (reduceMotion) $$("svg").forEach(s => s.pauseAnimations && s.pauseAnimations());
 
@@ -319,10 +370,9 @@ const cio = new IntersectionObserver(entries => {
     const t0 = performance.now(), dur = 1400;
     (function tick(t) {
       const k = Math.min(1, (t - t0) / dur), ease = 1 - Math.pow(1 - k, 4);
-      const v = to * ease;
-      el.textContent = dec ? v.toFixed(dec) : fmtNum(Math.round(v));
+      el.textContent = fmtNum(dec ? to * ease : Math.round(to * ease), dec);
       if (k < 1) requestAnimationFrame(tick);
-      else { el.classList.add("done"); el.textContent = dec ? to.toFixed(dec) : fmtNum(to); }
+      else { el.classList.add("done"); el.textContent = fmtNum(to, dec); }
     })(t0);
   }
 }, { threshold: .6 });
@@ -366,6 +416,51 @@ if (!reduceMotion && matchMedia("(pointer:fine)").matches) {
     card.addEventListener("pointerleave", () => card.style.transform = "");
   });
 }
+
+/* ————— Pipeline node tooltips ————— */
+const pipeTip = $("#pipeTip"), expCard = $(".exp-card");
+if (pipeTip && expCard) {
+  $$(".pipe .node[data-tip]").forEach(node => {
+    const show = () => {
+      pipeTip.hidden = false;
+      pipeTip.textContent = I18N[lang][node.dataset.tip] || "";
+      const nr = node.getBoundingClientRect(), cr = expCard.getBoundingClientRect();
+      pipeTip.classList.add("show");
+      const tw = pipeTip.offsetWidth, th = pipeTip.offsetHeight;
+      let left = nr.left - cr.left + nr.width / 2 - tw / 2;
+      left = Math.max(10, Math.min(left, cr.width - tw - 10));
+      let top = nr.top - cr.top - th - 10;
+      if (top < 6) top = nr.bottom - cr.top + 10;
+      pipeTip.style.left = left + "px";
+      pipeTip.style.top = top + "px";
+      node.classList.add("tip-on");
+    };
+    const hide = () => { pipeTip.classList.remove("show"); node.classList.remove("tip-on"); };
+    node.addEventListener("pointerenter", show);
+    node.addEventListener("pointerleave", hide);
+    node.addEventListener("focus", show);
+    node.addEventListener("blur", hide);
+  });
+}
+
+/* ————— GitHub, live ————— */
+function renderGH() {
+  if (!ghData) return;
+  const d = new Date(ghData.pushed).toLocaleDateString(lang === "es" ? "es-ES" : "en-US", { day: "numeric", month: "short", year: "numeric" });
+  $("#ghText").innerHTML = `<strong>${ghData.repos}</strong> ${I18N[lang]["gh.repos"]} · ${I18N[lang]["gh.upd"]}: ${d}`;
+  $("#ghLive").hidden = false;
+}
+(async () => {
+  try {
+    const [u, r] = await Promise.all([
+      fetch("https://api.github.com/users/carmenwi").then(x => x.json()),
+      fetch("https://api.github.com/users/carmenwi/repos?sort=pushed&per_page=1").then(x => x.json())
+    ]);
+    if (typeof u.public_repos !== "number") return;
+    ghData = { repos: u.public_repos, pushed: (r[0] && r[0].pushed_at) || u.updated_at };
+    renderGH();
+  } catch {}
+})();
 
 /* ————— Copy email ————— */
 $("#copyMail").addEventListener("click", async () => {

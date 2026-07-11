@@ -34,6 +34,32 @@
 </head>
 <body>
 <script>document.documentElement.classList.add("js")</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="ic-base" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 6 4 12l5 6M15 6l5 6-5 6"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5.2" rx="7" ry="2.6"/><path d="M5 5.2v13.6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V5.2M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></g></symbol>
+  <symbol id="i-line" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M4 17l5-6 4 3 7-8"/></symbol>
+  <symbol id="i-term" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="15" rx="2.5"/><path d="M7 9.5 10 12l-3 2.5M12.5 15H17"/></g></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 9.2h17M3.5 14.9h17M9.2 3.5v17M14.9 3.5v17"/></g></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 10h17M10 4.5V19.5"/></g></symbol>
+  <symbol id="i-nodes" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="5.5" cy="6" r="2.1"/><circle cx="18.5" cy="6" r="2.1"/><circle cx="12" cy="18" r="2.1"/><path d="M7.6 6h8.8M6.6 7.9 10.9 16M17.4 7.9 13.1 16"/></g></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.2"/><path d="m16.5 16.5 4.3 4.3"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 3v4.2M12 16.8V21M3 12h4.2M16.8 12H21M6 6l2.6 2.6M15.4 15.4 18 18M18 6l-2.6 2.6M8.6 15.4 6 18"/></symbol>
+  <symbol id="i-split" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3.5V8.5M12 8.5c0 4.2-6.5 3.8-6.5 8.7V19M12 8.5c0 4.2 6.5 3.8 6.5 8.7V19"/><circle cx="12" cy="3.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="5.5" cy="20" r="1.4" fill="currentColor" stroke="none"/><circle cx="18.5" cy="20" r="1.4" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="6.5" cy="8" r="2.2"/><circle cx="10.5" cy="16.5" r="2.2"/><circle cx="16" cy="5.8" r="2.2"/><circle cx="18" cy="14.5" r="2.2"/><circle cx="12.5" cy="11" r="1.3"/></g></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10 3v6l-5.2 9.2A1.9 1.9 0 0 0 6.5 21h11a1.9 1.9 0 0 0 1.7-2.8L14 9V3"/><path d="M8 15.5h8"/></g></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12 4 7.5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 18.5a4.5 4.5 0 1 1 .9-8.9A5.5 5.5 0 0 1 18.6 11a3.9 3.9 0 0 1-.6 7.5H7z"/></symbol>
+  <symbol id="i-arrows" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 8h12m0 0-3-3m3 3-3 3M20 16H8m0 0 3-3m-3 3 3 3"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12h5M16.5 12h3m0 0-2-2m2 2-2 2"/><rect x="9" y="8" width="6" height="8" rx="1.5"/></g></symbol>
+  <symbol id="i-branch" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="5" r="2.1"/><circle cx="6" cy="19" r="2.1"/><circle cx="18" cy="9" r="2.1"/><path d="M6 7.1v9.8M16 10.6C13 13.2 9 12.3 6.8 12.5"/></g></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M12 15l3.5-3.5"/><path d="M4 18.5h16"/></g></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M5 20v-8M12 20V5M19 20v-5M3 20h18"/></symbol>
+  <symbol id="i-pie" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><path d="M12 3.8V12h8.2"/></g></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="M10 9.5l4.5 2.5L10 14.5v-5z"/></g></symbol>
+</svg>
 <a class="skip-link" href="#experience" data-i18n="skip">Skip to content</a>
 <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 <div class="aura" id="aura" aria-hidden="true"></div>
@@ -93,10 +119,71 @@
 
 <!-- STATS -->
 <section class="stats" aria-label="Key figures">
-  <div class="stat hue-blue reveal"><strong><span class="count" data-to="6">0</span></strong><span data-i18n="stats.exp">months shipping data &amp; AI to production</span></div>
-  <div class="stat hue-violet reveal d1"><strong data-i18n="stats.gpaval">4.0<em>/4.0</em></strong><span data-i18n="stats.gpa">GPA, 3rd year — B.S. Data Science</span></div>
-  <div class="stat hue-amber reveal d2"><strong data-i18n="stats.first">1st</strong><span data-i18n="stats.hack">Innovation Award — Hack4Edu 2025</span></div>
-  <div class="stat hue-teal reveal d3"><strong><span class="count" data-to="60">0</span><em>+</em></strong><span data-i18n="stats.projects">university &amp; personal projects</span></div>
+
+  <div class="stat hue-blue reveal">
+    <div class="stat-viz">
+      <svg class="prodline" width="152" height="70" viewBox="0 0 152 70" aria-hidden="true">
+        <line class="rail" x1="8" y1="38" x2="118" y2="38"/>
+        <circle class="seg" cx="12" cy="38" r="5"/>
+        <circle class="seg" cx="33" cy="38" r="5"/>
+        <circle class="seg" cx="54" cy="38" r="5"/>
+        <circle class="seg" cx="75" cy="38" r="5"/>
+        <circle class="seg" cx="96" cy="38" r="5"/>
+        <circle class="seg" cx="117" cy="38" r="5"/>
+        <path class="flag" d="M126,38 h16 m0,0 l-6,-6 m6,6 l-6,6"/>
+        <text x="134" y="24">PROD</text>
+        <text x="63" y="62" data-i18n="stats.range">DEC — MAY</text>
+      </svg>
+    </div>
+    <strong><span class="count" data-to="6">0</span></strong>
+    <span data-i18n="stats.exp">months shipping data &amp; AI to production</span>
+  </div>
+
+  <div class="stat hue-violet reveal d1">
+    <div class="stat-viz ringwrap">
+      <svg width="96" height="96" viewBox="0 0 96 96" aria-hidden="true">
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="var(--c-blue)"/><stop offset="1" stop-color="var(--c-teal)"/>
+          </linearGradient>
+        </defs>
+        <circle class="ring-bg" cx="48" cy="48" r="40"/>
+        <circle class="ring-fg" cx="48" cy="48" r="40" style="--off:7.5"/>
+        <g class="ring-tick">
+          <line x1="84" y1="48" x2="92" y2="48"/><line x1="77.1" y1="69.2" x2="83.6" y2="73.9"/>
+          <line x1="59.1" y1="82.2" x2="61.6" y2="89.8"/><line x1="36.9" y1="82.2" x2="34.4" y2="89.8"/>
+          <line x1="18.9" y1="69.2" x2="12.4" y2="73.9"/><line x1="12" y1="48" x2="4" y2="48"/>
+          <line x1="18.9" y1="26.8" x2="12.4" y2="22.1"/><line x1="36.9" y1="13.8" x2="34.4" y2="6.2"/>
+          <line x1="59.1" y1="13.8" x2="61.6" y2="6.2"/><line x1="77.1" y1="26.8" x2="83.6" y2="22.1"/>
+        </g>
+      </svg>
+      <strong><span class="count" data-to="9.7" data-dec="1">0</span><em>/10</em></strong>
+    </div>
+    <span data-i18n="stats.gpa">GPA — 10× High Honors (≈ 4.0 US scale)</span>
+  </div>
+
+  <div class="stat hue-amber reveal d2">
+    <div class="stat-viz">
+      <svg class="podium" width="120" height="78" viewBox="0 0 120 78" aria-hidden="true">
+        <path class="laurel" d="M38,12 q-9,11 0,22 M82,12 q9,11 0,22"/>
+        <rect x="10" y="42" width="30" height="36" rx="4"/>
+        <rect x="45" y="20" width="30" height="58" rx="4"/>
+        <rect x="80" y="54" width="30" height="24" rx="4"/>
+        <text x="60" y="40">1</text>
+      </svg>
+    </div>
+    <strong data-i18n="stats.first">1st</strong>
+    <span data-i18n="stats.hack">Innovation Award — Hack4Edu 2025</span>
+  </div>
+
+  <div class="stat hue-teal reveal d3">
+    <div class="stat-viz">
+      <svg class="dotgrid" id="dotGrid" width="140" height="84" viewBox="0 0 140 84" aria-hidden="true"></svg>
+    </div>
+    <strong><span class="count" data-to="60">0</span><em>+</em></strong>
+    <span data-i18n="stats.projects">university &amp; personal projects</span>
+  </div>
+
 </section>
 
 <!-- EXPERIENCE -->
@@ -118,6 +205,8 @@
     </div>
 
     <p class="exp-lead" data-i18n="exp.lead">One pipeline, end to end: raw events in, decisions out. This is the system I designed and ran —</p>
+    <p class="pipe-hint" data-i18n="exp.hint">Hover each node to see what I built there.</p>
+    <div class="tip" id="pipeTip" role="tooltip" hidden></div>
 
     <div class="pipe-wrap" role="img" aria-label="Data pipeline: Shopify, Gorgias and web events flow through Cloud Functions and Pub/Sub into BigQuery, powering Looker dashboards, a RAG support agent and a clinical recommendation engine">
       <svg class="pipe" viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
@@ -138,25 +227,25 @@
         <circle class="pkt v" r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1s"><mpath href="#pF"/></animateMotion></circle>
         <circle class="pkt r" r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.6s"><mpath href="#pG"/></animateMotion></circle>
         <!-- source nodes -->
-        <g class="node t"><rect x="18" y="48" width="90" height="44" rx="10"/><text x="63" y="67">Shopify</text><text class="sub" x="63" y="82" data-i18n="pipe.orders">orders</text></g>
-        <g class="node t"><rect x="18" y="128" width="90" height="44" rx="10"/><text x="63" y="147">Gorgias</text><text class="sub" x="63" y="162" data-i18n="pipe.tickets">tickets</text></g>
-        <g class="node t"><rect x="18" y="208" width="90" height="44" rx="10"/><text x="63" y="227">Web</text><text class="sub" x="63" y="242" data-i18n="pipe.events">events</text></g>
+        <g class="node t" data-tip="tip.src" tabindex="0"><rect x="18" y="48" width="90" height="44" rx="10"/><text x="63" y="67">Shopify</text><text class="sub" x="63" y="82" data-i18n="pipe.orders">orders</text></g>
+        <g class="node t" data-tip="tip.src" tabindex="0"><rect x="18" y="128" width="90" height="44" rx="10"/><text x="63" y="147">Gorgias</text><text class="sub" x="63" y="162" data-i18n="pipe.tickets">tickets</text></g>
+        <g class="node t" data-tip="tip.src" tabindex="0"><rect x="18" y="208" width="90" height="44" rx="10"/><text x="63" y="227">Web</text><text class="sub" x="63" y="242" data-i18n="pipe.events">events</text></g>
         <!-- ingest -->
-        <g class="node b"><rect x="240" y="122" width="126" height="56" rx="12"/><text x="303" y="145">Cloud Functions</text><text class="sub" x="303" y="161">Pub/Sub · Cloud Tasks</text></g>
+        <g class="node b" data-tip="tip.ingest" tabindex="0"><rect x="240" y="122" width="126" height="56" rx="12"/><text x="303" y="145">Cloud Functions</text><text class="sub" x="303" y="161">Pub/Sub · Cloud Tasks</text></g>
         <!-- warehouse -->
-        <g class="node b big"><rect x="434" y="118" width="126" height="64" rx="14"/><text x="497" y="145">BigQuery</text><text class="sub" x="497" y="162" data-i18n="pipe.wh">single source of truth</text></g>
+        <g class="node b big" data-tip="tip.wh" tabindex="0"><rect x="434" y="118" width="126" height="64" rx="14"/><text x="497" y="145">BigQuery</text><text class="sub" x="497" y="162" data-i18n="pipe.wh">single source of truth</text></g>
         <!-- outputs -->
-        <g class="node a"><rect x="648" y="38" width="98" height="52" rx="10"/><text x="697" y="59">Looker</text><text class="sub" x="697" y="75" data-i18n="pipe.dash">dashboards</text></g>
-        <g class="node v"><rect x="648" y="124" width="98" height="52" rx="10"/><text x="697" y="145">RAG agent</text><text class="sub" x="697" y="161">Gemini 2.5</text></g>
-        <g class="node r"><rect x="648" y="210" width="98" height="52" rx="10"/><text x="697" y="231" data-i18n="pipe.rec">Recommender</text><text class="sub" x="697" y="247" data-i18n="pipe.clinical">clinical scoring</text></g>
+        <g class="node a" data-tip="tip.dash" tabindex="0"><rect x="648" y="38" width="98" height="52" rx="10"/><text x="697" y="59">Looker</text><text class="sub" x="697" y="75" data-i18n="pipe.dash">dashboards</text></g>
+        <g class="node v" data-tip="tip.rag" tabindex="0"><rect x="648" y="124" width="98" height="52" rx="10"/><text x="697" y="145">RAG agent</text><text class="sub" x="697" y="161">Gemini 2.5</text></g>
+        <g class="node r" data-tip="tip.rec" tabindex="0"><rect x="648" y="210" width="98" height="52" rx="10"/><text x="697" y="231" data-i18n="pipe.rec">Recommender</text><text class="sub" x="697" y="247" data-i18n="pipe.clinical">clinical scoring</text></g>
       </svg>
     </div>
 
     <div class="exp-metrics">
-      <div class="metric hue-blue reveal"><strong><span class="count" data-to="10">0</span><em>+</em></strong><span data-i18n="exp.m1">hours of manual reporting eliminated weekly</span></div>
-      <div class="metric hue-violet reveal d1"><strong><span class="count" data-to="1000">0</span><em>+</em></strong><span data-i18n="exp.m2">support queries a month handled by my RAG agent</span></div>
-      <div class="metric hue-rose reveal d2"><strong><span class="count" data-to="100">0</span><em>%</em></strong><span data-i18n="exp.m3">medically safe recommendations, guaranteed by design</span></div>
-      <div class="metric hue-teal reveal d3"><strong><span class="count" data-to="2000">0</span><em>+</em></strong><span data-i18n="exp.m4">pharmacy distribution points mapped for strategy</span></div>
+      <div class="metric hue-blue reveal"><strong><span class="count" data-to="10">0</span>+</strong><span data-i18n="exp.m1">hours of manual reporting eliminated weekly</span></div>
+      <div class="metric hue-violet reveal d1"><strong><span class="count" data-to="1000">0</span>+</strong><span data-i18n="exp.m2">support queries a month handled by my RAG agent</span></div>
+      <div class="metric hue-rose reveal d2"><strong><span class="count" data-to="100">0</span>%</strong><span data-i18n="exp.m3">medically safe recommendations, guaranteed by design</span></div>
+      <div class="metric hue-teal reveal d3"><strong><span class="count" data-to="2000">0</span>+</strong><span data-i18n="exp.m4">pharmacy distribution points mapped for strategy</span></div>
     </div>
 
     <div class="exp-pillars">
@@ -211,6 +300,10 @@
       <h3 data-i18n="p2.title">Neoveo — asteroids, made legible</h3>
       <p data-i18n="p2.desc">48 hours to make planetary defense understandable: live NASA NeoWs telemetry, hazard classification, and an orbital dashboard any stakeholder can read.</p>
       <ul class="tags"><li>Python</li><li>Pandas</li><li>NASA API</li><li>Streamlit</li></ul>
+      <div class="card-links">
+        <a href="https://github.com/alediabre/nasa-space-apps-challenge" target="_blank" rel="noopener">GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7m0 0H8m9 0v9"/></svg></a>
+      </div>
     </article>
 
     <article class="card hue-teal reveal d2" data-tilt>
@@ -279,6 +372,17 @@
   </div>
 </div>
 
+<!-- PRINCIPLES -->
+<section class="principles" aria-label="How I work">
+  <p class="kicker hue-blue reveal" data-i18n="prin.kicker">How I work</p>
+  <div class="prin-grid">
+    <div class="prin reveal"><i>01</i><h3 data-i18n="pr1.t">Ship beats perfect</h3><p data-i18n="pr1.d">Prototype in days, iterate on feedback. Hackathons taught me speed; production taught me when to slow down.</p></div>
+    <div class="prin reveal d1"><i>02</i><h3 data-i18n="pr2.t">Users first</h3><p data-i18n="pr2.d">A dashboard nobody reads doesn't count. I build for the person on the other side — stakeholder, student or patient.</p></div>
+    <div class="prin reveal d2"><i>03</i><h3 data-i18n="pr3.t">Data over opinions</h3><p data-i18n="pr3.d">Every system I ship reports its own impact: hours saved, queries resolved, risks caught. If it can't be measured, it isn't done.</p></div>
+    <div class="prin reveal d3"><i>04</i><h3 data-i18n="pr4.t">Own it end to end</h3><p data-i18n="pr4.d">Architecture to production, without waiting to be asked — the way I ran a 250-student community and a company's data pipeline at once.</p></div>
+  </div>
+</section>
+
 <!-- SKILLS -->
 <section class="section" id="skills">
   <header class="section-head reveal">
@@ -289,19 +393,46 @@
   <div class="skill-grid">
     <div class="skill-col hue-blue reveal">
       <h3 data-i18n="skills.g1">Languages &amp; core</h3>
-      <ul class="chips"><li>Python</li><li>SQL</li><li>R</li><li>Bash</li><li>NumPy</li><li>Pandas</li></ul>
+      <ul class="chips">
+        <li><svg><use href="#i-code"/></svg>Python</li>
+        <li><svg><use href="#i-db"/></svg>SQL</li>
+        <li><svg><use href="#i-line"/></svg>R</li>
+        <li><svg><use href="#i-term"/></svg>Bash</li>
+        <li><svg><use href="#i-grid"/></svg>NumPy</li>
+        <li><svg><use href="#i-table"/></svg>Pandas</li>
+      </ul>
     </div>
     <div class="skill-col hue-violet reveal d1">
       <h3 data-i18n="skills.g2">ML &amp; AI</h3>
-      <ul class="chips"><li>Scikit-learn</li><li data-i18n="skills.rag">RAG systems</li><li>Vertex AI</li><li data-i18n="skills.cls">Classification</li><li>Clustering</li><li>A/B Testing</li></ul>
+      <ul class="chips">
+        <li><svg><use href="#i-nodes"/></svg>Scikit-learn</li>
+        <li><svg><use href="#i-search"/></svg><span data-i18n="skills.rag">RAG systems</span></li>
+        <li><svg><use href="#i-spark"/></svg>Vertex AI</li>
+        <li><svg><use href="#i-split"/></svg><span data-i18n="skills.cls">Classification</span></li>
+        <li><svg><use href="#i-dots"/></svg>Clustering</li>
+        <li><svg><use href="#i-flask"/></svg>A/B Testing</li>
+      </ul>
     </div>
     <div class="skill-col hue-teal reveal d2">
       <h3 data-i18n="skills.g3">Data engineering &amp; cloud</h3>
-      <ul class="chips"><li>BigQuery</li><li>Cloud Run</li><li>Pub/Sub</li><li data-i18n="skills.etl">Serverless ETL</li><li>PostgreSQL</li><li>Git / CI</li></ul>
+      <ul class="chips">
+        <li><svg><use href="#i-cube"/></svg>BigQuery</li>
+        <li><svg><use href="#i-cloud"/></svg>Cloud Run</li>
+        <li><svg><use href="#i-arrows"/></svg>Pub/Sub</li>
+        <li><svg><use href="#i-flow"/></svg><span data-i18n="skills.etl">Serverless ETL</span></li>
+        <li><svg><use href="#i-db"/></svg>PostgreSQL</li>
+        <li><svg><use href="#i-branch"/></svg>Git / CI</li>
+      </ul>
     </div>
     <div class="skill-col hue-amber reveal d3">
       <h3 data-i18n="skills.g4">Visualization &amp; BI</h3>
-      <ul class="chips"><li>Looker Studio</li><li>Power BI · DAX</li><li>Tableau</li><li>Matplotlib</li><li>Streamlit</li></ul>
+      <ul class="chips">
+        <li><svg><use href="#i-gauge"/></svg>Looker Studio</li>
+        <li><svg><use href="#i-bars"/></svg>Power BI · DAX</li>
+        <li><svg><use href="#i-pie"/></svg>Tableau</li>
+        <li><svg><use href="#i-line"/></svg>Matplotlib</li>
+        <li><svg><use href="#i-play"/></svg>Streamlit</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -315,17 +446,29 @@
   </header>
   <ol class="timeline">
     <li class="t-award reveal"><span class="t-year">2026</span>
-      <div><h3 data-i18n="j7.t">Santander Excelencia 360º Scholarship</h3><p data-i18n="j7.d">Selected for Santander's excellence program, recognizing academic record and project track. Also: a summer serving thousands of visitors at Jackson Hole Mountain Resort, Wyoming.</p></div></li>
+      <div><p class="t-tag" data-i18n="tl.award">Award</p>
+      <div class="t-head"><h3 data-i18n="j7.t">Santander Excelencia 360º Scholarship</h3></div>
+      <p data-i18n="j7.d">Selected for Santander's excellence program, recognizing academic record and project track. Also: a summer serving thousands of visitors at Jackson Hole Mountain Resort, Wyoming.</p></div></li>
     <li class="t-work reveal"><span class="t-year">25–26</span>
-      <div><h3 data-i18n="j6.t">Data &amp; AI Engineer — IVB Wellness Lab</h3><p data-i18n="j6.d">Six months owning serverless ETL, a production RAG agent and growth analytics for a health-tech company. Code straight to production.</p></div></li>
+      <div><p class="t-tag" data-i18n="tl.work">Role</p>
+      <div class="t-head"><h3 data-i18n="j6.t">Data &amp; AI Engineer — IVB Wellness Lab</h3></div>
+      <p data-i18n="j6.d">Six months owning serverless ETL, a production RAG agent and growth analytics for a health-tech company. Code straight to production.</p></div></li>
     <li class="t-award reveal"><span class="t-year">2025</span>
-      <div><h3 data-i18n="j5.t">1st Place, Hack4Edu · NASA Space Apps · IBM Power BI</h3><p data-i18n="j5.d">Innovation Award at Iberoamerica's largest edtech hackathon, planetary-defense data viz at the Spanish Space Agency, and BI certification.</p></div></li>
+      <div><p class="t-tag" data-i18n="tl.award">Award</p>
+      <div class="t-head"><h3 data-i18n="j5.t">1st Place, Hack4Edu · NASA Space Apps · IBM Power BI</h3></div>
+      <p data-i18n="j5.d">Innovation Award at Iberoamerica's largest edtech hackathon, planetary-defense data viz at the Spanish Space Agency, and BI certification.</p></div></li>
     <li class="t-cert reveal"><span class="t-year">2024</span>
-      <div><h3 data-i18n="j4.t">Google Data Analytics Professional Certificate</h3><p data-i18n="j4.d">Full analytics cycle — cleaning to dashboards — completed alongside my degree and a summer job abroad. Capstone on GitHub.</p></div></li>
-    <li class="t-edu reveal"><span class="t-year">2023</span>
-      <div><h3 data-i18n="j3.t">B.S. in Data Science — UNIR</h3><p data-i18n="j3.d">4.0/4.0 GPA this year (9.5/10 overall), six High Honors. Elected admin of the degree's official community — 250+ students, peer mentoring.</p></div></li>
+      <div><p class="t-tag" data-i18n="tl.cert">Certificate</p>
+      <div class="t-head"><h3 data-i18n="j4.t">Google Data Analytics Professional Certificate</h3></div>
+      <p data-i18n="j4.d">Full analytics cycle — cleaning to dashboards — completed alongside my degree and a summer job abroad. Capstone on GitHub.</p></div></li>
+    <li class="t-edu reveal"><span class="t-year">2023–27</span>
+      <div><p class="t-tag" data-i18n="tl.edu">Education</p>
+      <div class="t-head"><h3 data-i18n="j3.t">B.S. in Data Science — UNIR</h3><span class="live-pill" data-i18n="tl.now">In progress</span></div>
+      <p data-i18n="j3.d">9.7/10 GPA with ten High Honors. Elected admin of the degree's official community — 250+ students, peer mentoring.</p></div></li>
     <li class="t-work reveal"><span class="t-year">23–24</span>
-      <div><h3 data-i18n="j2.t">Operations &amp; Events — Columbia Hospitality, WA, USA</h3><p data-i18n="j2.d">Two Work &amp; Travel seasons at a 4-star property: events, customer service, full-English environment.</p></div></li>
+      <div><p class="t-tag" data-i18n="tl.work">Role</p>
+      <div class="t-head"><h3 data-i18n="j2.t">Operations &amp; Events — Columbia Hospitality, WA, USA</h3></div>
+      <p data-i18n="j2.d">Two Work &amp; Travel seasons at a 4-star property: events, customer service, full-English environment.</p></div></li>
   </ol>
 </section>
 
@@ -346,6 +489,10 @@
         <a class="btn btn-ghost magnetic" href="assets/Carmen_Witsman_CV_EN.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg><span data-i18n="about.cven">CV — English</span></a>
         <a class="btn btn-ghost magnetic" href="assets/Carmen_Witsman_CV_ES.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg><span data-i18n="about.cves">CV — Español</span></a>
       </div>
+      <p class="gh-live reveal d4" id="ghLive" hidden>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .3.2.66.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        <span id="ghText"></span>
+      </p>
     </div>
   </div>
 </section>
