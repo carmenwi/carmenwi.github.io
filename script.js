@@ -16,53 +16,79 @@ if (!("IntersectionObserver" in window)) {
 const I18N = {
   en: {
     "skip": "Skip to content",
-    "nav.work": "Work", "nav.skills": "Skills", "nav.journey": "Journey", "nav.about": "About", "nav.contact": "Contact",
-    "hero.status": "Open to internships & junior roles — US & EU work authorization",
-    "hero.sub": "I turn raw data into decisions — machine learning, statistics and storytelling with",
-    "hero.cta1": "Selected work", "hero.cta2": "Get in touch",
+    "nav.exp": "Experience", "nav.work": "Projects", "nav.skills": "Skills", "nav.journey": "Journey", "nav.about": "About", "nav.contact": "Contact",
+    "hero.status": "Fresh off a Data & AI Engineering internship — US & EU work authorization",
+    "hero.role": "Data Science & Engineering",
+    "hero.sub": "From serverless pipelines on Google Cloud to RAG agents answering 1,000+ queries a month in production — I build data systems that ship.",
+    "hero.cta1": "See what I've built", "hero.cta2": "Get in touch",
     "hero.loc": "Seville, Spain · Dual citizen US / ES",
-    "stats.gpa": "GPA — B.S. Data Science",
-    "stats.projects": "university & personal projects",
+    "stats.exp": "months shipping data & AI to production",
+    "stats.gpaval": "4.0<em>/4.0</em>",
+    "stats.gpa": "GPA, 3rd year — B.S. Data Science",
     "stats.first": "1st",
     "stats.hack": "Innovation Award — Hack4Edu 2025",
-    "stats.community": "students in the community I lead",
-    "work.kicker": "Selected work",
-    "work.title": "Projects that shipped, won, or taught me the most.",
+    "stats.projects": "university & personal projects",
+    "exp.kicker": "Industry experience",
+    "exp.title": "Six months owning data & AI in production.",
+    "exp.sub": "Data & AI Engineer at IVB Wellness Lab (health-tech, remote) — full ownership of the data lifecycle: architecture decisions, production code, real users.",
+    "exp.dates": "Dec 2025 — May 2026",
+    "exp.mode": "Internship · Remote",
+    "exp.lead": "One pipeline, end to end: raw events in, decisions out. This is the system I designed and ran —",
+    "exp.m1": "hours of manual reporting eliminated weekly",
+    "exp.m2": "support queries a month handled by my RAG agent",
+    "exp.m3": "medically safe recommendations, guaranteed by design",
+    "exp.m4": "pharmacy distribution points mapped for strategy",
+    "exp.e1t": "Serverless ETL, from scratch",
+    "exp.e1d": "Designed event-driven pipelines on Cloud Functions, Pub/Sub and Cloud Tasks, centralizing every data source in BigQuery for marketing and e-commerce teams.",
+    "exp.e2t": "RAG in production",
+    "exp.e2d": "Customer-support agent on Gemini 2.5 + Vertex AI with custom intent classifiers, latency-cutting caches and CI validators that block hallucinations before deploy.",
+    "exp.e3t": "Clinical recommendation engine",
+    "exp.e3d": "Deterministic Python scoring system that mathematically prioritizes real medical conditions over generic AI guesses — safety as a property, not a hope.",
+    "exp.e4t": "Growth analytics",
+    "exp.e4d": "Shopify and Gorgias APIs wired into the warehouse for cohort analyses that reshaped YoY marketing spend and mapped 2,000+ pharmacy distribution points.",
+    "exp.prev": "Before data: two summer seasons in hospitality and events in Washington State, and a summer at Jackson Hole Mountain Resort, Wyoming — pressure, English, and customers, first-hand.",
+    "pipe.orders": "orders", "pipe.tickets": "tickets", "pipe.events": "events",
+    "pipe.wh": "single source of truth", "pipe.dash": "dashboards", "pipe.rec": "Recommender", "pipe.clinical": "clinical scoring",
+    "work.kicker": "Selected projects",
+    "work.title": "Every project tells a story. Here are five.",
     "work.more": "Everything else lives on GitHub",
-    "p1.award": "1st Place — Hack4Edu 2025, global hackathon",
-    "p1.title": "AI-powered study platform",
-    "p1.desc": "Led a team of 4 building an educational platform to fight dropout rates: a recommendation engine generating personalized study paths and AI summaries. MVP deployed on Streamlit Cloud.",
-    "p2.award": "NASA Space Apps Challenge 2025",
-    "p2.desc": "48-hour build for the Planetary Defense challenge: near-Earth-object telemetry from NASA's NeoWs API, classified by hazard level and rendered as an interactive orbital dashboard.",
+    "p1.award": "1st Place — Hack4Edu 2025, Iberoamerica's largest edtech hackathon",
+    "p1.title": "MyLEA — AI study companion",
+    "p1.desc": "A platform that plugs into university virtual campuses and turns scattered coursework into one organized study hub — with AI study paths, summaries and a virtual pet that keeps motivation alive. Judged 1st for Innovation among global teams (ProFuturo — Telefónica & \"la Caixa\").",
+    "p2.award": "NASA Space Apps Challenge 2025 — Spanish Space Agency",
+    "p2.title": "Neoveo — asteroids, made legible",
+    "p2.desc": "48 hours to make planetary defense understandable: live NASA NeoWs telemetry, hazard classification, and an orbital dashboard any stakeholder can read.",
     "p3.award": "Academic research — healthcare ML",
     "p3.title": "Frailty prediction in elderly patients",
-    "p3.desc": "95% sensitivity detecting mortality risk on a highly imbalanced medical dataset — KNN + K-Means pipeline, SMOTE resampling and cross-validation against overfitting.",
+    "p3.desc": "95% sensitivity detecting mortality risk on a heavily imbalanced medical dataset: KNN + K-Means, SMOTE resampling, cross-validation against overfitting.",
     "p4.award": "Risk modeling in R",
     "p4.title": "Credit default detection",
-    "p4.desc": "Logistic regression model predicting loan default at 82% precision / 95% sensitivity, isolating the variables that drive risk and validating against overfit.",
+    "p4.desc": "Logistic regression predicting loan default at 82% precision / 95% sensitivity — isolating the variables that truly drive risk, validated against overfit.",
     "p5.award": "Devpost — Gemini hackathon 2026",
     "p5.title": "Building with Gemini",
-    "p5.desc": "Latest hackathon entry exploring Google's Gemini models in a TypeScript app — rapid prototyping outside my Python comfort zone.",
+    "p5.desc": "Latest hackathon entry exploring Google's Gemini models in a TypeScript app — rapid prototyping beyond my Python comfort zone.",
     "skills.kicker": "Toolkit",
     "skills.title": "Depth where it matters, breadth everywhere else.",
-    "skills.g1": "Languages & core", "skills.g2": "Machine learning", "skills.g3": "Data & cloud", "skills.g4": "Visualization & BI",
-    "skills.reg": "Regression", "skills.cls": "Classification", "skills.etl": "ETL pipelines",
+    "skills.g1": "Languages & core", "skills.g2": "ML & AI", "skills.g3": "Data engineering & cloud", "skills.g4": "Visualization & BI",
+    "skills.rag": "RAG systems", "skills.cls": "Classification", "skills.etl": "Serverless ETL",
     "journey.kicker": "Journey",
     "journey.title": "A short history of momentum.",
-    "j5.t": "Devpost Gemini hackathon",
-    "j5.d": "Kept shipping — exploring generative AI tooling beyond coursework.",
-    "j4.t": "1st Place, Hack4Edu · NASA Space Apps · IBM Power BI certificate",
-    "j4.d": "Innovation Award at a global hackathon (ProEduca — Telefónica), planetary-defense data viz for NASA's challenge, and BI certification.",
-    "j3.t": "Google Data Analytics Professional Certificate",
-    "j3.d": "Full analytics cycle: from cleaning to dashboards, capstone on GitHub.",
-    "j2.t": "B.S. in Data Science — UNIR",
-    "j2.d": "9.5/10 GPA, six High Honors so far. Elected admin of the degree's official student community (250+ students, peer mentoring).",
-    "j1.t": "Summer Work & Travel — Washington, USA",
-    "j1.d": "Worked two seasons in a fully English-speaking environment. Adaptability, first-hand.",
+    "j7.t": "Santander Excelencia 360º Scholarship",
+    "j7.d": "Selected for Santander's excellence program, recognizing academic record and project track. Also: a summer serving thousands of visitors at Jackson Hole Mountain Resort, Wyoming.",
+    "j6.t": "Data & AI Engineer — IVB Wellness Lab",
+    "j6.d": "Six months owning serverless ETL, a production RAG agent and growth analytics for a health-tech company. Code straight to production.",
+    "j5.t": "1st Place, Hack4Edu · NASA Space Apps · IBM Power BI",
+    "j5.d": "Innovation Award at Iberoamerica's largest edtech hackathon, planetary-defense data viz at the Spanish Space Agency, and BI certification.",
+    "j4.t": "Google Data Analytics Professional Certificate",
+    "j4.d": "Full analytics cycle — cleaning to dashboards — completed alongside my degree and a summer job abroad. Capstone on GitHub.",
+    "j3.t": "B.S. in Data Science — UNIR",
+    "j3.d": "4.0/4.0 GPA this year (9.5/10 overall), six High Honors. Elected admin of the degree's official community — 250+ students, peer mentoring.",
+    "j2.t": "Operations & Events — Columbia Hospitality, WA, USA",
+    "j2.d": "Two Work & Travel seasons at a 4-star property: events, customer service, full-English environment.",
     "about.kicker": "About",
     "about.title": "Problem-solver first, technologist second.",
-    "about.p1": "I'm Carmen — a data science student who measures work by outcomes: models that catch what humans miss, dashboards that change decisions, products that win awards. Dual US/Spanish citizen, so I can work on either side of the Atlantic without sponsorship.",
-    "about.p2": "Off the keyboard I run a 250-student community, mentor peers, and collect hackathon weekends. Spanish native, English C1, French B1.",
+    "about.p1": "I'm Carmen — I've shipped data systems a company runs on, won an international hackathon, and kept a 4.0 GPA while doing it. Dual US/Spanish citizen: I can work on either side of the Atlantic, no sponsorship needed.",
+    "about.p2": "Off the keyboard I run a 250-student community, mentor peers, and collect hackathon weekends. Santander Excelencia 360º scholar. Spanish native, English C1, French B1.",
     "about.cven": "CV — English", "about.cves": "CV — Español",
     "contact.kicker": "Contact",
     "contact.title": "Let's build something with data.",
@@ -73,53 +99,79 @@ const I18N = {
   },
   es: {
     "skip": "Saltar al contenido",
-    "nav.work": "Proyectos", "nav.skills": "Skills", "nav.journey": "Trayectoria", "nav.about": "Sobre mí", "nav.contact": "Contacto",
-    "hero.status": "Disponible para prácticas y roles junior — permiso de trabajo en EE. UU. y UE",
-    "hero.sub": "Convierto datos en decisiones — machine learning, estadística y storytelling con",
-    "hero.cta1": "Ver proyectos", "hero.cta2": "Hablemos",
+    "nav.exp": "Experiencia", "nav.work": "Proyectos", "nav.skills": "Skills", "nav.journey": "Trayectoria", "nav.about": "Sobre mí", "nav.contact": "Contacto",
+    "hero.status": "Recién salida de unas prácticas de Data & AI Engineering — permiso de trabajo en EE. UU. y UE",
+    "hero.role": "Data Science & Engineering",
+    "hero.sub": "De pipelines serverless en Google Cloud a agentes RAG respondiendo +1.000 consultas al mes en producción — construyo sistemas de datos que llegan a usuarios reales.",
+    "hero.cta1": "Ver lo que he construido", "hero.cta2": "Hablemos",
     "hero.loc": "Sevilla, España · Doble nacionalidad EE. UU. / ES",
+    "stats.exp": "meses llevando datos e IA a producción",
+    "stats.gpaval": "9,5<em>/10</em>",
     "stats.gpa": "Nota media — Grado en Ciencia de Datos",
-    "stats.projects": "proyectos universitarios y personales",
     "stats.first": "1er",
     "stats.hack": "Premio a la Innovación — Hack4Edu 2025",
-    "stats.community": "estudiantes en la comunidad que lidero",
+    "stats.projects": "proyectos universitarios y personales",
+    "exp.kicker": "Experiencia en industria",
+    "exp.title": "Seis meses a cargo de datos e IA en producción.",
+    "exp.sub": "Data & AI Engineer en IVB Wellness Lab (health-tech, remoto) — propiedad completa del ciclo de datos: decisiones de arquitectura, código en producción, usuarios reales.",
+    "exp.dates": "Dic 2025 — May 2026",
+    "exp.mode": "Prácticas · Remoto",
+    "exp.lead": "Un pipeline de principio a fin: entran eventos brutos, salen decisiones. Este es el sistema que diseñé y operé —",
+    "exp.m1": "horas de reporting manual eliminadas cada semana",
+    "exp.m2": "consultas de soporte al mes gestionadas por mi agente RAG",
+    "exp.m3": "recomendaciones médicamente seguras, garantizadas por diseño",
+    "exp.m4": "puntos de distribución en farmacias mapeados para estrategia",
+    "exp.e1t": "ETL serverless, desde cero",
+    "exp.e1d": "Diseñé pipelines orientados a eventos con Cloud Functions, Pub/Sub y Cloud Tasks, centralizando cada fuente de datos en BigQuery para marketing y e-commerce.",
+    "exp.e2t": "RAG en producción",
+    "exp.e2d": "Agente de atención al cliente sobre Gemini 2.5 + Vertex AI con clasificadores de intención propios, cachés que reducen latencia y validadores CI que bloquean alucinaciones antes del deploy.",
+    "exp.e3t": "Motor de recomendación clínico",
+    "exp.e3d": "Sistema determinista de scoring en Python que prioriza matemáticamente condiciones médicas reales sobre conjeturas genéricas de IA — la seguridad como propiedad, no como esperanza.",
+    "exp.e4t": "Analítica de crecimiento",
+    "exp.e4d": "APIs de Shopify y Gorgias conectadas al warehouse para análisis de cohortes que redefinieron la inversión de marketing YoY y mapearon +2.000 puntos de farmacia.",
+    "exp.prev": "Antes de los datos: dos temporadas de hostelería y eventos en el estado de Washington, y un verano en Jackson Hole Mountain Resort, Wyoming — presión, inglés y clientes, en primera persona.",
+    "pipe.orders": "pedidos", "pipe.tickets": "tickets", "pipe.events": "eventos",
+    "pipe.wh": "fuente única de verdad", "pipe.dash": "dashboards", "pipe.rec": "Recomendador", "pipe.clinical": "scoring clínico",
     "work.kicker": "Proyectos destacados",
-    "work.title": "Proyectos que se lanzaron, ganaron o me enseñaron más.",
+    "work.title": "Cada proyecto cuenta una historia. Aquí van cinco.",
     "work.more": "Todo lo demás está en GitHub",
-    "p1.award": "1er Premio — Hack4Edu 2025, hackathon global",
-    "p1.title": "Plataforma de estudio con IA",
-    "p1.desc": "Lideré un equipo de 4 creando una plataforma educativa contra el abandono escolar: motor de recomendación con rutas de estudio personalizadas y resúmenes con IA. MVP desplegado en Streamlit Cloud.",
-    "p2.award": "NASA Space Apps Challenge 2025",
-    "p2.desc": "Construido en 48 horas para el reto de Defensa Planetaria: telemetría de objetos cercanos a la Tierra desde la API NeoWs de la NASA, clasificados por peligrosidad en un dashboard orbital interactivo.",
+    "p1.award": "1er Premio — Hack4Edu 2025, el mayor hackathon edtech de Iberoamérica",
+    "p1.title": "MyLEA — compañero de estudio con IA",
+    "p1.desc": "Una plataforma que se conecta a los campus virtuales y convierte el caos de asignaturas en un centro de estudio organizado — con rutas de estudio por IA, resúmenes y una mascota virtual que mantiene viva la motivación. 1er Premio a la Innovación entre equipos globales (ProFuturo — Telefónica y \"la Caixa\").",
+    "p2.award": "NASA Space Apps Challenge 2025 — Agencia Espacial Española",
+    "p2.title": "Neoveo — asteroides, por fin legibles",
+    "p2.desc": "48 horas para hacer entendible la defensa planetaria: telemetría en vivo de la API NeoWs de la NASA, clasificación por peligrosidad y un dashboard orbital que cualquier stakeholder puede leer.",
     "p3.award": "Investigación académica — ML en salud",
     "p3.title": "Predicción de fragilidad en pacientes ancianos",
-    "p3.desc": "95% de sensibilidad detectando riesgo de mortalidad en un dataset médico muy desbalanceado — pipeline KNN + K-Means, SMOTE y validación cruzada contra el sobreajuste.",
+    "p3.desc": "95% de sensibilidad detectando riesgo de mortalidad en un dataset médico muy desbalanceado: KNN + K-Means, SMOTE y validación cruzada contra el sobreajuste.",
     "p4.award": "Modelado de riesgo en R",
     "p4.title": "Detección de impago de créditos",
-    "p4.desc": "Regresión logística que predice el impago con 82% de precisión y 95% de sensibilidad, aislando las variables que determinan el riesgo y validando contra el sobreajuste.",
+    "p4.desc": "Regresión logística que predice el impago con 82% de precisión y 95% de sensibilidad — aislando las variables que de verdad determinan el riesgo, validada contra el sobreajuste.",
     "p5.award": "Devpost — hackathon de Gemini 2026",
     "p5.title": "Construyendo con Gemini",
     "p5.desc": "Mi entrada más reciente: explorando los modelos Gemini de Google en una app TypeScript — prototipado rápido fuera de mi zona de confort en Python.",
     "skills.kicker": "Herramientas",
     "skills.title": "Profundidad donde importa, amplitud en todo lo demás.",
-    "skills.g1": "Lenguajes y base", "skills.g2": "Machine learning", "skills.g3": "Datos y cloud", "skills.g4": "Visualización y BI",
-    "skills.reg": "Regresión", "skills.cls": "Clasificación", "skills.etl": "Pipelines ETL",
+    "skills.g1": "Lenguajes y base", "skills.g2": "ML e IA", "skills.g3": "Data engineering y cloud", "skills.g4": "Visualización y BI",
+    "skills.rag": "Sistemas RAG", "skills.cls": "Clasificación", "skills.etl": "ETL serverless",
     "journey.kicker": "Trayectoria",
     "journey.title": "Una breve historia de impulso.",
-    "j5.t": "Hackathon Gemini de Devpost",
-    "j5.d": "Sin dejar de crear — explorando IA generativa más allá del temario.",
-    "j4.t": "1er Premio Hack4Edu · NASA Space Apps · Certificado IBM Power BI",
-    "j4.d": "Premio a la Innovación en un hackathon global (ProEduca — Telefónica), visualización de defensa planetaria para el reto de la NASA y certificación en BI.",
-    "j3.t": "Certificado Profesional de Análisis de Datos de Google",
-    "j3.d": "Ciclo completo de analítica: de la limpieza a los dashboards, capstone en GitHub.",
-    "j2.t": "Grado en Ciencia de Datos — UNIR",
-    "j2.d": "Nota media 9.5/10, seis Matrículas de Honor hasta ahora. Administradora de la comunidad oficial del grado (250+ estudiantes, mentoría entre pares).",
-    "j1.t": "Summer Work & Travel — Washington, EE. UU.",
-    "j1.d": "Dos temporadas trabajando en un entorno 100% angloparlante. Adaptabilidad de primera mano.",
+    "j7.t": "Beca Santander Excelencia 360º",
+    "j7.d": "Seleccionada para el programa de excelencia de Santander por expediente y trayectoria de proyectos. Además: un verano atendiendo a miles de visitantes en Jackson Hole Mountain Resort, Wyoming.",
+    "j6.t": "Data & AI Engineer — IVB Wellness Lab",
+    "j6.d": "Seis meses a cargo de ETL serverless, un agente RAG en producción y analítica de crecimiento para una health-tech. Código directo a producción.",
+    "j5.t": "1er Premio Hack4Edu · NASA Space Apps · IBM Power BI",
+    "j5.d": "Premio a la Innovación en el mayor hackathon edtech de Iberoamérica, visualización de defensa planetaria en la Agencia Espacial Española y certificación en BI.",
+    "j4.t": "Certificado Profesional de Análisis de Datos de Google",
+    "j4.d": "Ciclo completo de analítica — de la limpieza a los dashboards — compaginado con el grado y un trabajo de verano en el extranjero. Capstone en GitHub.",
+    "j3.t": "Grado en Ciencia de Datos — UNIR",
+    "j3.d": "Nota media 9,5/10 (4.0/4.0 este año), seis Matrículas de Honor. Administradora de la comunidad oficial del grado — 250+ estudiantes, mentoría entre pares.",
+    "j2.t": "Operaciones y eventos — Columbia Hospitality, WA, EE. UU.",
+    "j2.d": "Dos temporadas Work & Travel en un hotel 4 estrellas: eventos, atención al cliente, entorno 100% en inglés.",
     "about.kicker": "Sobre mí",
     "about.title": "Primero resolver problemas, después la tecnología.",
-    "about.p1": "Soy Carmen — estudiante de ciencia de datos que mide el trabajo por resultados: modelos que detectan lo que el ojo humano no ve, dashboards que cambian decisiones, productos que ganan premios. Doble nacionalidad EE. UU./España: puedo trabajar a ambos lados del Atlántico sin patrocinio de visado.",
-    "about.p2": "Fuera del teclado gestiono una comunidad de 250 estudiantes, hago mentoría y colecciono fines de semana de hackathon. Español nativo, inglés C1, francés B1.",
+    "about.p1": "Soy Carmen — he construido sistemas de datos de los que depende una empresa, he ganado un hackathon internacional y he mantenido una media de sobresaliente mientras tanto. Doble nacionalidad EE. UU./España: puedo trabajar a ambos lados del Atlántico sin patrocinio de visado.",
+    "about.p2": "Fuera del teclado gestiono una comunidad de 250 estudiantes, hago mentoría y colecciono fines de semana de hackathon. Becaria Santander Excelencia 360º. Español nativo, inglés C1, francés B1.",
     "about.cven": "CV — English", "about.cves": "CV — Español",
     "contact.kicker": "Contacto",
     "contact.title": "Construyamos algo con datos.",
@@ -132,12 +184,19 @@ const I18N = {
 
 let lang = localStorage.getItem("lang") || (navigator.language.startsWith("es") ? "es" : "en");
 const langSwitch = $("#langSwitch");
+const fmtNum = n => n >= 1000 ? n.toLocaleString(lang === "es" ? "es-ES" : "en-US") : String(n);
 function applyLang() {
   const dict = I18N[lang];
-  $$("[data-i18n]").forEach(el => { const t = dict[el.dataset.i18n]; if (t) el.innerHTML = t; });
+  $$("[data-i18n]").forEach(el => {
+    const t = dict[el.dataset.i18n];
+    if (!t) return;
+    if (t.includes("<") && !(el instanceof SVGElement)) el.innerHTML = t;
+    else el.textContent = t;
+  });
   document.documentElement.lang = lang;
   langSwitch.setAttribute("aria-checked", lang === "es" ? "true" : "false");
   localStorage.setItem("lang", lang);
+  $$(".count.done").forEach(el => el.textContent = fmtNum(+el.dataset.to));
 }
 langSwitch.addEventListener("click", () => { lang = lang === "en" ? "es" : "en"; applyLang(); });
 applyLang();
@@ -151,13 +210,11 @@ function resolved() {
   return t === "light" || t === "dark" ? t : (systemDark.matches ? "dark" : "light");
 }
 function paintTheme() {
-  const mode = resolved();
   root.dataset.theme = localStorage.getItem("theme") || "auto";
-  root.dataset.mode = mode;
+  root.dataset.mode = resolved();
 }
 themeBtn.addEventListener("click", () => {
-  const next = resolved() === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", next);
+  localStorage.setItem("theme", resolved() === "dark" ? "light" : "dark");
   if (document.startViewTransition && !reduceMotion) {
     document.startViewTransition(() => { paintTheme(); fieldColors(); });
   } else { paintTheme(); fieldColors(); }
@@ -165,17 +222,17 @@ themeBtn.addEventListener("click", () => {
 systemDark.addEventListener("change", () => { paintTheme(); fieldColors(); });
 paintTheme();
 
-/* ————— Particle field (data network) ————— */
+/* ————— Particle field (multi-hue data network) ————— */
 const canvas = $("#field");
 const ctx = canvas.getContext("2d");
 let pts = [], W = 0, H = 0, dpr = 1, raf = null, running = false;
-let colDot = "", colLine = "";
+let palette = [];
 const mouse = { x: -9e3, y: -9e3 };
 
 function fieldColors() {
   const cs = getComputedStyle(document.body);
-  const accent = cs.getPropertyValue("--accent").trim();
-  colDot = accent; colLine = accent;
+  palette = ["--c-blue", "--c-violet", "--c-teal", "--c-amber", "--c-rose"]
+    .map(v => cs.getPropertyValue(v).trim());
 }
 function fieldSize() {
   const r = canvas.parentElement.getBoundingClientRect();
@@ -183,11 +240,11 @@ function fieldSize() {
   W = r.width; H = r.height;
   canvas.width = W * dpr; canvas.height = H * dpr;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  const n = Math.min(120, Math.round((W * H) / 16000));
-  pts = Array.from({ length: n }, () => ({
+  const n = Math.min(110, Math.round((W * H) / 17000));
+  pts = Array.from({ length: n }, (_, i) => ({
     x: Math.random() * W, y: Math.random() * H,
     vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35,
-    r: Math.random() * 1.6 + .8
+    r: Math.random() * 1.6 + .8, ci: i % palette.length
   }));
 }
 function fieldDraw() {
@@ -202,23 +259,23 @@ function fieldDraw() {
     if (p.x < -20) p.x = W + 20; if (p.x > W + 20) p.x = -20;
     if (p.y < -20) p.y = H + 20; if (p.y > H + 20) p.y = -20;
   }
-  ctx.globalAlpha = 1;
   for (let i = 0; i < pts.length; i++) {
     for (let j = i + 1; j < pts.length; j++) {
       const a = pts[i], b = pts[j];
       const dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
       if (d < LINK) {
-        ctx.globalAlpha = (1 - d / LINK) * .14;
-        ctx.strokeStyle = colLine;
+        ctx.globalAlpha = (1 - d / LINK) * .13;
+        ctx.strokeStyle = palette[a.ci];
         ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
       }
     }
   }
   for (const p of pts) {
-    ctx.globalAlpha = .5;
-    ctx.fillStyle = colDot;
+    ctx.globalAlpha = .55;
+    ctx.fillStyle = palette[p.ci];
     ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill();
   }
+  ctx.globalAlpha = 1;
   if (running) raf = requestAnimationFrame(fieldDraw);
 }
 function fieldStart() { if (!running && !reduceMotion) { running = true; raf = requestAnimationFrame(fieldDraw); } }
@@ -232,6 +289,19 @@ addEventListener("pointermove", e => {
 }, { passive: true });
 document.addEventListener("visibilitychange", () => document.hidden ? fieldStop() : fieldStart());
 new IntersectionObserver(([e]) => e.isIntersecting ? fieldStart() : fieldStop()).observe(canvas);
+
+/* ————— Cursor aura ————— */
+const aura = $("#aura");
+if (!reduceMotion && matchMedia("(pointer:fine)").matches) {
+  addEventListener("pointermove", e => {
+    aura.classList.add("on");
+    aura.style.left = e.clientX + "px";
+    aura.style.top = e.clientY + "px";
+  }, { passive: true });
+}
+
+/* ————— SMIL pause under reduced motion ————— */
+if (reduceMotion) $$("svg").forEach(s => s.pauseAnimations && s.pauseAnimations());
 
 /* ————— Reveals ————— */
 const io = new IntersectionObserver(entries => {
@@ -249,8 +319,10 @@ const cio = new IntersectionObserver(entries => {
     const t0 = performance.now(), dur = 1400;
     (function tick(t) {
       const k = Math.min(1, (t - t0) / dur), ease = 1 - Math.pow(1 - k, 4);
-      el.textContent = (to * ease).toFixed(dec);
+      const v = to * ease;
+      el.textContent = dec ? v.toFixed(dec) : fmtNum(Math.round(v));
       if (k < 1) requestAnimationFrame(tick);
+      else { el.classList.add("done"); el.textContent = dec ? to.toFixed(dec) : fmtNum(to); }
     })(t0);
   }
 }, { threshold: .6 });
@@ -272,7 +344,7 @@ const spy = new IntersectionObserver(entries => {
 }, { rootMargin: "-40% 0px -55% 0px" });
 $$("main section[id]").forEach(s => spy.observe(s));
 
-/* ————— Magnetic buttons ————— */
+/* ————— Magnetic buttons + card tilt ————— */
 if (!reduceMotion && matchMedia("(pointer:fine)").matches) {
   $$(".magnetic").forEach(el => {
     el.addEventListener("pointermove", e => {
@@ -283,8 +355,6 @@ if (!reduceMotion && matchMedia("(pointer:fine)").matches) {
     });
     el.addEventListener("pointerleave", () => el.style.transform = "");
   });
-
-  /* ————— Card tilt + spotlight ————— */
   $$("[data-tilt]").forEach(card => {
     card.addEventListener("pointermove", e => {
       const r = card.getBoundingClientRect();
